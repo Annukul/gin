@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn | GIN</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="col-menu">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <p class="session-name">Welcome, Annukul</p>
+                    <form action="" method="POST">
+                        <input type="submit" value="Logout" name="logout" class="logout">
+                    </form>
+                    <a href="index.php">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Reviews</a>
+                    <a href="add.html">Add post</a>
+                    <form action="">
+                        <p>Subscribe to our newsletter!</p>
+                        <input type="email" name="" class="sub-email">
+                        <input type="submit" value="Subscribe" class="sub-submit">
+                    </form>
+                </div>
+                <div id="col-menu-btn">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </div>
+            </div>
+
+            <div class="nav-content">
+                <div class="nav-content-left">
+                    <img src="img/logo.png" alt="GIN logo" style="width:130px; height:130px">
+                    <p>Gaming Industry News</p>
+                </div>
+                <div class="nav-content-right">
+                    <form action="" class="nav-content-right-form">
+                        <input type="search" name="search" class="search-input">
+                        <input type="submit" value="Search" class="submit-input">
+                    </form>
+                    <a href="#" onclick="openNav()" class="icons"><i><img src="img/email.png"
+                                style="width: 35px; height: 35px"></i></a>
+                    <a href="login.html" class="icons"><i><img src="img/manager.png"
+                                style="width: 35px; height: 35px"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="form-main">
+        <div class="form-div">
+            <form action="" class="form" method="POST">
+                <p>Register</p>
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-input">
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-input">
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-input">
+                </div>
+
+                <div class="form-control">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm_password" class="form-input">
+                </div>
+
+                <input type="submit" name="signup" value="SignUp" class="cred-btn">
+
+                <a href="login.html">Already a user? Login!</a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="f-head">
+            <p class="logo">GIN</p>
+        </div>
+        <div class="f-social">
+            <li class="icons-li">
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </li>
+            <li class="icons-li">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="icons-li">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="icons-li">
+                <a href="#"><i class="fab fa-reddit-square"></i></a>
+            </li>
+            <li class="icons-li">
+                <a href="#"><i class="fab fa-github-square"></i></a>
+            </li>
+        </div>
+        <div class="f-sub">
+            <p>Subscribe to our weekly news letter.</p>
+            <form action="">
+                <input type="email" name="email" class="search-input">
+                <input type="submit" value="Subscribe" class="submit-input ft">
+            </form>
+        </div>
+        <div class="f-opt">
+            <ul class="f-opt-ul">
+                <li><a href="#">News</a></li>
+                <hr>
+                <li><a href="#">Reviews</a></li>
+                <hr>
+                <li><a href="#">About</a></li>
+                <hr>
+                <li><a href="#">Contact</a></li>
+                <hr>
+                <li><a href="#">Privacy policy</a></li>
+                <hr>
+                <li><a href="#">Write for us</a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="f-copyright">
+            <p>&copy; 2020 GIN. Developed by <a href="https://annukul.github.io/portfolio">Annukul</a></p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
